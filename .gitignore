@@ -6,5 +6,6 @@ Design_factory.VC.VC.opendb
 Design_factory.VC.db
 AbstractFactory/Debug/*
 Design_Observe/Debug/*
+Builder\Debug\*
 Factorymethod/Debug/
 Design_factory/Debug/*
