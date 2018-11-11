@@ -1,0 +1,10 @@
+ipch
+VirtualFun
+Debug
+.vs
+Design_factory.VC.VC.opendb
+Design_factory.VC.db
+AbstractFactory/Debug/*
+Design_Observe/Debug/*
+Factorymethod/Debug/
+Design_factory/Debug/*
