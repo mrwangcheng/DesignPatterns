@@ -10,7 +10,7 @@ BuilderEx::BuilderEx()
 BuilderEx::~BuilderEx()
 {
 }
-ConcreteBuilder::ConcreteBuilder()
+ConcreteBuilder::ConcreteBuilder():m_Product(new ProductA)
 {
 }
 ConcreteBuilder::~ConcreteBuilder()
@@ -18,19 +18,28 @@ ConcreteBuilder::~ConcreteBuilder()
 }
 void ConcreteBuilder::BuildPartA(const string& buildPara)
 {
-	cout << "Step1:Build PartA..." << buildPara << endl;
+	cout << "Step1:Build " << buildPara << endl;
 }
 void ConcreteBuilder::BuildPartB(const string& buildPara)
 {
-	cout << "Step1:Build PartB..." << buildPara << endl;
+	cout << "Step1:Build " << buildPara << endl;
 }
 void ConcreteBuilder::BuildPartC(const string& buildPara)
 {
-	cout << "Step1:Build PartC..." << buildPara << endl;
+	cout << "Step1:Build " << buildPara << endl;
+}
+void ConcreteBuilder::SetName(const string &name)
+{
+	m_Product->SetName(name);
+}
+string ConcreteBuilder::GetName()
+{
+	return m_Product->GetName();
+
 }
 BProduct* ConcreteBuilder::GetProduct()
 {
-	return new BProduct();
+	return m_Product;
 }
 
 BProduct::BProduct()
@@ -39,4 +48,21 @@ BProduct::BProduct()
 BProduct::~BProduct()
 {
 
+}
+ProductA::ProductA()
+{
+}
+ProductA::~ProductA()
+{
+
+}
+void ProductA::SetName(string name)
+{
+
+	m_name = name;
+}
+string ProductA::GetName()
+{
+
+	return m_name;
 }

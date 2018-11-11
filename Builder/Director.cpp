@@ -10,7 +10,8 @@ Director::~Director()
 }
 void Director::Construct()
 {
-	_bld->BuildPartA("user-defined");
-	_bld->BuildPartB("user-defined");
-	_bld->BuildPartC("user-defined");
+	_bld->BuildPartA("PartA");
+	_bld->BuildPartB("PartB");
+	_bld->BuildPartC("PartC");
+	_bld->SetName("ProductA");
 }

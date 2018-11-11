@@ -9,6 +9,8 @@ public:
 	virtual void BuildPartA(const string& buildPara) = 0;
 	virtual void BuildPartB(const string& buildPara) = 0;
 	virtual void BuildPartC(const string& buildPara) = 0;
+	virtual void SetName(const string &name) = 0;
+	virtual string GetName() = 0;
 	virtual BProduct* GetProduct() = 0;
 protected:
 	BuilderEx();
@@ -22,15 +24,30 @@ public:
 	void BuildPartA(const string& buildPara);
 	void BuildPartB(const string& buildPara);
 	void BuildPartC(const string& buildPara);
-	BProduct* GetProduct();
+	virtual void SetName(const string &name);
+	virtual string GetName();
+	virtual BProduct* GetProduct();
 protected:
+	BProduct *m_Product;
 private:
 };
 class BProduct
 {
 public:
 	BProduct();
-	~BProduct();
+	virtual~BProduct();
+	virtual string GetName()=0;
+	virtual void SetName(string name) = 0;
+protected:
+	string m_name;
+};
+class ProductA :public BProduct
+{
 public:
+	ProductA();
+	virtual~ProductA();
+public:
+	virtual string GetName();
+	virtual void SetName(string name);
 
 };
