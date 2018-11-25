@@ -7,15 +7,13 @@ public:
 	virtual void Operation() = 0;
 protected:
 	Abstraction();
-private:
 };
-class RefinedAbstraction :public Abstraction
+class ConcreteAbstraction :public Abstraction
 {
 public:
-	RefinedAbstraction(AbstractionImp* imp);
-	~RefinedAbstraction();
+	ConcreteAbstraction(AbstractionImp* imp);
+	~ConcreteAbstraction();
 	void Operation();
-protected:
 private:
 	AbstractionImp* _imp;
 };

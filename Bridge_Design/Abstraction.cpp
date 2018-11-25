@@ -9,14 +9,14 @@ Abstraction::Abstraction()
 Abstraction::~Abstraction()
 {
 }
-RefinedAbstraction::RefinedAbstraction(AbstractionImp* imp)
+ConcreteAbstraction::ConcreteAbstraction(AbstractionImp* imp)
 {
 	_imp = imp;
 }
-RefinedAbstraction::~RefinedAbstraction()
+ConcreteAbstraction::~ConcreteAbstraction()
 {
 }
-void RefinedAbstraction::Operation()
+void ConcreteAbstraction::Operation()
 {
 	_imp->Operation();
 }

@@ -9,8 +9,8 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 	AbstractionImp* imp = new ConcreteAbstractionImpA();
-	Abstraction* abs = new RefinedAbstraction(imp);
-	abs->Operation();
+	Abstraction* Action = new ConcreteAbstraction(imp);
+	Action->Operation();
 	return 0;
 }
 
