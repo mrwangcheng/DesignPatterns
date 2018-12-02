@@ -24,7 +24,7 @@ Decorator::Decorator(Component* com)
 }
 Decorator::~Decorator()
 {
-	delete _com;
+	
 }
 void Decorator::Operation()
 { }
