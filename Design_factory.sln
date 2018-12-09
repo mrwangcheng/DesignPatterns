@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decorator_Design", "Decorat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Compsonment_Design", "Compsonment_Design\Compsonment_Design.vcxproj", "{BC962D74-8D2D-44C4-8F2B-A8F8DCE83367}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flyweight_Design", "Flyweight_Design\Flyweight_Design.vcxproj", "{AC72076D-4066-4E8D-98B4-AFCE07CF4811}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{BC962D74-8D2D-44C4-8F2B-A8F8DCE83367}.Release|x64.Build.0 = Release|x64
 		{BC962D74-8D2D-44C4-8F2B-A8F8DCE83367}.Release|x86.ActiveCfg = Release|Win32
 		{BC962D74-8D2D-44C4-8F2B-A8F8DCE83367}.Release|x86.Build.0 = Release|Win32
+		{AC72076D-4066-4E8D-98B4-AFCE07CF4811}.Debug|x64.ActiveCfg = Debug|x64
+		{AC72076D-4066-4E8D-98B4-AFCE07CF4811}.Debug|x64.Build.0 = Debug|x64
+		{AC72076D-4066-4E8D-98B4-AFCE07CF4811}.Debug|x86.ActiveCfg = Debug|Win32
+		{AC72076D-4066-4E8D-98B4-AFCE07CF4811}.Debug|x86.Build.0 = Debug|Win32
+		{AC72076D-4066-4E8D-98B4-AFCE07CF4811}.Release|x64.ActiveCfg = Release|x64
+		{AC72076D-4066-4E8D-98B4-AFCE07CF4811}.Release|x64.Build.0 = Release|x64
+		{AC72076D-4066-4E8D-98B4-AFCE07CF4811}.Release|x86.ActiveCfg = Release|Win32
+		{AC72076D-4066-4E8D-98B4-AFCE07CF4811}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
