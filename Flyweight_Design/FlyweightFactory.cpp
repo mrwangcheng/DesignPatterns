@@ -3,6 +3,15 @@
 #include <iostream>
 #include <cassert>
 using namespace std;
+ FlyweightFactory *FlyweightFactory::m_Instance=NULL;
+  FlyweightFactory *FlyweightFactory::GetInstance()
+ {
+	  if (!m_Instance)
+	  {
+		  m_Instance = new FlyweightFactory();
+	  }
+	  return m_Instance;
+ }
 FlyweightFactory::FlyweightFactory()
 {
 }

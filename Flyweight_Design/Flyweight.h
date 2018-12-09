@@ -5,7 +5,7 @@ class Flyweight
 {
 public:
 	virtual ~Flyweight();
-	virtual void Operation(const string& extrinsicState);
+	virtual void Operation(const string& extrinsicState)=0;
 	string GetIntrinsicState();
 protected:
 	Flyweight(string intrinsicState);

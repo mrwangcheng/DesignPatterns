@@ -4,11 +4,13 @@
 using namespace std;
 class FlyweightFactory
 {
-public:
-	FlyweightFactory();
-	~FlyweightFactory();
-	Flyweight* GetFlyweight(const string& key);
 protected:
+	FlyweightFactory();
+public:
+	~FlyweightFactory();
+	 Flyweight* GetFlyweight(const string& key);
+	 static FlyweightFactory *GetInstance();
 private:
-	vector<Flyweight*> _fly;
+	 vector<Flyweight*> _fly;
+	 static FlyweightFactory *m_Instance;
 };
