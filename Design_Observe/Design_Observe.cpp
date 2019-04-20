@@ -123,11 +123,14 @@ void ConSubjectA::Detech(Observe *pObserve/* = NULL*/)
 			}
 		}
 	}
-	for (it; it != m_vObserve.end(); ++it)
+	else {
+		vector<Observe*>().swap(m_vObserve);
+	}
+	/*for (it; it != m_vObserve.end(); ++it)
 	{
 		m_vObserve.erase(it);
 
-	}
+	}*/
 }
 void ConSubjectA::Notify()
 {
@@ -180,11 +183,14 @@ void ConSubjectB::Detech(Observe *pObserve /*= NULL*/)
 			}
 		}
 	}
-	for (it; it != m_vObserve.end(); ++it)
+	else {
+	   vector<Observe*>().swap(m_vObserve);
+	}
+	/*for (it; it != m_vObserve.end(); ++it)
 	{
 		m_vObserve.erase(it);
 		
-	}
+	}*/
 
 
 }
