@@ -22,6 +22,7 @@ bool ContextEx::ChangeState(State* state)
 	return true;
 }
 void ContextEx::OperationChangState()
-{
+{	
+
 	_state->OperationChangeState(this);
 }
