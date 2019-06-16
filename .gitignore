@@ -22,3 +22,8 @@ Strategy_Design/Debug/*
 State_Design/Debug/*
 Memento_Pattern/Debug/*
 Mediator_Pattern/Debug/*
+ChainofResponsibility_Pattern/Debug/*
+Command_Pattern/Debug/*
+Interpreter_Pattern/Debug/*
+Iterator_Pattern/Debug/*
+Vistor_Pattern/Debug/*
